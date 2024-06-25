@@ -1,0 +1,177 @@
+---
+const benefits = [
+    "Incrementa la función del sistema inmunológico.",
+    "Mejora el funcionamiento del sistema nervioso.",
+    "Promueve la autorecuperación.",
+    "Nuestro cuerpo funciona en su óptimo potencial.",
+    "Reduce el estrés físico y emocional.",
+    "Mejora la calidad del sueño.",
+    "Reduce los costos en salud.",
+];
+
+const causes = [
+    "Caídas",
+    "Accidentes automovilísticos",
+    "Estrés",
+    "Emociones como enojo o tristeza",
+    "Actividades repetitivas en el trabajo",
+    "Carga constante de objetos pesados y",
+    "Consumo de toxinas",
+];
+
+const symptoms = [
+    "Dificultad para mover el cuello.",
+    "Lesión del nervio ciático.",
+    "Hernias de disco.",
+    "Dolor de espalda.",
+    "Dolor de cabeza.",
+    "Hormigueos.",
+    "Lumbalgia.",
+    "Mareos.",
+];
+---
+
+<div
+    id="acerca-de"
+    class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-musa-blue-50"
+>
+    <h2
+        class="block text-2xl font-bold text-sky-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        Acerca de la
+    </h2>
+    <h2
+        class="block text-5xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        Quiropáctica
+    </h2>
+    <p class="my-3 text-gray-600">
+        La Quiropráctica es una profesión enfocada en la salud de la columna
+        vertebral y en el libre funcionamiento del Sistema Nervioso.
+    </p>
+    <p class="my-3 text-gray-600">
+        La función del quiropráctico es corregirlas subluxaciónes vertebrales.
+    </p>
+    <p class="my-3 text-gray-600">
+        Cuando la columna pierde su posición adecuada se genera un desequilibrio
+        en nuestra salud, lo cual provoca interferencia en el sistema nervioso y
+        el funcionamiento de nuestro cuerpo.
+    </p>
+
+    <h3
+        class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        Beneficios de la quiropráctica.
+    </h3>
+
+    <ul class="mt-6 space-y-3 text-sm">
+        {
+            benefits.map((benfefit) => (
+                <li class="flex space-x-3">
+                    <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                        <svg
+                            class="flex-shrink-0 size-3.5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-neutral-400">
+                        {benfefit}
+                    </span>
+                </li>
+            ))
+        }
+    </ul>
+
+    <h3
+        class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        ¿Si no me duele nada puedo ir al Quiropráctico?
+    </h3>
+    <p class="my-3 text-gray-600">
+        La respuesta es sí, debido a que la columna pierde su posición adecuada
+        por:
+    </p>
+    <ul class="mt-6 space-y-3 text-sm">
+        {
+            causes.map((cause) => (
+                <li class="flex space-x-3">
+                    <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                        <svg
+                            class="flex-shrink-0 size-3.5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-neutral-400">
+                        {cause}
+                    </span>
+                </li>
+            ))
+        }
+    </ul>
+
+    <h3
+        class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        Necesito un Quiropráctico si presento
+    </h3>
+    <ul class="mt-6 space-y-3 text-sm">
+        {
+            symptoms.map((syntom) => (
+                <li class="flex space-x-3">
+                    <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                        <svg
+                            class="flex-shrink-0 size-3.5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-neutral-400">
+                        {syntom}
+                    </span>
+                </li>
+            ))
+        }
+    </ul>
+
+    <h3
+        class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+        ¿Quién se puede ajustar?
+    </h3>
+
+    <p class="my-3 text-gray-600">
+        Todas la personas desde bebés hasta adultos mayores, ya que existen
+        diferentes técnicas, desde muy suaves de mínimo contacto a técnicas con
+        ayuda de instrumentación, las cuales serán utilizadas de acuerdo a la
+        edad y estado físico del paciente.
+    </p>
+</div>

@@ -1,0 +1,58 @@
+---
+const benefits = [
+    "Incrementa la función del sistema inmunológico.",
+    "Mejora el funcionamiento del sistema nervioso.",
+    "Promueve la autorecuperación.",
+    "Nuestro cuerpo funciona en su óptimo potencial.",
+    "Reduce el estrés físico y emocional.",
+    "Mejora la calidad del sueño.",
+    "Reduce los costos en salud.",
+];
+---
+
+<h3
+    class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:text-6xl lg:leading-tight"
+>
+    Beneficios de la quiropráctica.
+</h3>
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+        {
+            benefits.map((benefit) => (
+                <div class="text-center">
+                    <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-neutral-800 dark:border-neutral-700">
+                        <svg
+                            class="flex-shrink-0 size-5 text-gray-600 dark:text-neutral-400"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <>
+                                <rect
+                                    width="10"
+                                    height="14"
+                                    x="3"
+                                    y="8"
+                                    rx="2"
+                                />
+                                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
+                                <path d="M8 18h.01" />
+                            </>
+                        </svg>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
+                            {benefit}
+                        </h3>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>
