@@ -1,46 +1,76 @@
-<div id="inicio" class="bg-sky-50">
-    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- Grid -->
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-20 md:items-center">
-            <div class="order-2 md:order-1 text-center">
+---
+import Navbar from "../components/Navbar.astro";
+---
+
+<div id="musa" class="relative overflow-hidden bg-white">
+    <Navbar />
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 sm:items-center">
+            <div class="order-1 relative sm:order-2 sm:w-1/2">
+                <img
+                    class="w-full rounded-md sm:hidden"
+                    src="../musa-lp/images/hero.jpg"
+                    alt="quiropráctica haciendo un ajuste"
+                />
+                <img
+                    class="w-full rounded-md hidden sm:block"
+                    src="../musa-lp/images/hero-vertical.jpg"
+                    alt="quiropráctica haciendo un ajuste"
+                />
+            </div>
+
+            <div class="order-2 sm:order-1 text-center sm:w-1/2">
                 <div class="flex justify-center items-center">
-                    <img class="h-24" src="/musa-lp/images/logo.png" alt="logo"/>
-                </div>
-                <h1 class="block text-8xl font-bold text-lime-600 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-                MUSA
-                </h1>
-                <h2 class="block text-2xl font-bold text-sky-600 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-                    Centro Quiropráctico
-                </h2>
-                <p class="text-gray-500 italic">
-                    Yo cuido mi salud, ajusto mi columna.
-                </p>
-                <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor enim et in iste minima numquam reprehenderit sequi. Accusantium alias debitis dolore excepturi, sed totam.
-                </p>
+                    <div class="max-w-2xl text-center mx-auto sm:text-left">
+                        <div class="sm:text-center">
+                            <div class="flex justify-center">
+                                <img
+                                    class="h-48 hidden sm:block"
+                                    src="../musa-lp/images/logo.png"
+                                    alt="logo"
+                                />
+                            </div>
+                            <h1
+                                class="block text-8xl font-bold text-musa-green-600 lg:leading-tight"
+                            >
+                                MUSA
+                            </h1>
+                            <h2
+                                class="block text-2xl font-bold text-musa-blue-600 sm:text-4xl lg:leading-tight"
+                            >
+                                Centro Quiropráctico
+                            </h2>
+                            <p class="text-gray-500 italic sm:text-lg">
+                                Yo cuido mi salud, ajusto mi columna.
+                            </p>
+                            <p class="mt-3 text-gray-500 italic sm:sm:text-lg">
+                                Nuestra misión es ajustar familias, y comunicar
+                                la efectividad e importncia del <b
+                                    class="text-musa-green-600"
+                                    >Ajuste Quiropráctico</b
+                                >. Así como contribuir a logar una mejor calidad
+                                de vida de manera natural, para así desarrollar
+                                el máximo potencial y disminuir interferencias
+                                en el sistema nervioso.
+                            </p>
+                        </div>
 
-                <!-- Buttons -->
-                <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-                    <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-sky-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                       href="https://api.whatsapp.com/send?phone=7228648426" target="_blank">
-                        Contactanos
-                    </a>
-                    <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                       href="#">
-                        Acerca de la quiropráctica
-                    </a>
+                        <div
+                            class="mt-7 grid gap-3 w-full sm:inline-flex sm:justify-center sm:mx-auto"
+                        >
+                            <a
+                                class="py-6 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border
+                    border-transparent bg-musa-blue-600 text-white hover:bg-musa-blue-700 disabled:opacity-50 disabled:pointer-events-none
+                    sm:text-lg"
+                                href="https://api.whatsapp.com/send?phone=7228648426"
+                                target="_blank"
+                            >
+                                Agenda tu cita
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- End Buttons -->
             </div>
-            <!-- End Col -->
-
-            <div class="order-1 md:order-2 relative">
-                <img class="w-full rounded-md"
-                     src="/musa-lp/images/hero.jpg"
-                     alt="Image Description">
-            </div>
-            <!-- End Col -->
         </div>
-        <!-- End Grid -->
     </div>
 </div>

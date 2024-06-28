@@ -1,45 +1,224 @@
-<div id="acerca-de" class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
-    <h2 class="block text-2xl font-bold text-sky-600 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-        Acerca de la
-    </h2>
-    <h2 class="block text-5xl font-bold text-lime-600 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-        Quiropáctica
-    </h2>
-    <p class="my-3 text-gray-600 dark:text-gray-400">
-        We provide you with a test account that can be set up in seconds. Our main focus is getting responses to you as
-        soon as we can.
-    </p>
-    <div class="hs-accordion-group mt-3">
-        <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
-            <a href="#"
-               class="hs-accordion-toggle text-lime-600 hs-accordion-active:text-lime-600 flex items-center justify-between w-full font-semibold text-start text-lime-600 py-4 px-5 hover:text-lime-600 disabled:opacity-50 disabled:pointer-events-none">
-                Concepto 1
-                <span class="material-symbols-outlined text-right">arrow_forward</span>
-            </a>
+---
+const benefits = [
+    "Incrementa la función del sistema inmunológico.",
+    "Mejora el funcionamiento del sistema nervioso.",
+    "Promueve la autorecuperación.",
+    "Nuestro cuerpo funciona en su óptimo potencial.",
+    "Reduce el estrés físico y emocional.",
+    "Mejora la calidad del sueño.",
+    "Reduce los costos en salud.",
+];
+
+const causes = [
+    "Caídas",
+    "Accidentes automovilísticos",
+    "Estrés",
+    "Emociones como enojo o tristeza",
+    "Actividades repetitivas en el trabajo",
+    "Carga constante de objetos pesados y",
+    "Consumo de toxinas",
+];
+
+const symptoms = [
+    "Dificultad para mover el cuello.",
+    "Lesión del nervio ciático.",
+    "Hernias de disco.",
+    "Dolor de espalda.",
+    "Dolor de cabeza.",
+    "Hormigueos.",
+    "Lumbalgia.",
+    "Mareos.",
+];
+---
+
+<div
+    id="quiropráctica"
+    class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-musa-blue-50 md:max-w-full"
+>
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <h2
+            class="block text-2xl font-bold text-sky-600 sm:text-4xl lg:leading-tight"
+        >
+            Acerca de la
+        </h2>
+        <h2
+            class="block text-5xl font-bold text-musa-green-600 sm:text-6xl lg:leading-tight"
+        >
+            Quiropáctica
+        </h2>
+    </div>
+
+    <div class="max-w-2xl mx-auto md:max-w-4xl">
+        <div class="mb-14">
+            <p class="my-3 text-gray-600 sm:text-justify sm:text-lg">
+                La Quiropráctica es una profesión enfocada en la salud de la
+                columna vertebral y en el libre funcionamiento del Sistema
+                Nervioso.
+            </p>
+            <p class="my-3 text-gray-600 sm:text-justify sm:text-lg">
+                La función del quiropráctico es corregirlas subluxaciónes
+                vertebrales.
+            </p>
+            <p class="my-3 text-gray-600 sm:text-justify sm:text-lg">
+                Cuando la columna pierde su posición adecuada se genera un
+                desequilibrio en nuestra salud, lo cual provoca interferencia en
+                el sistema nervioso y el funcionamiento de nuestro cuerpo.
+            </p>
         </div>
 
-        <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
-            <a href="#"
-               class="hs-accordion-toggle text-lime-600 hs-accordion-active:text-lime-600 flex items-center justify-between w-full font-semibold text-start text-lime-600 py-4 px-5 hover:text-lime-600 disabled:opacity-50 disabled:pointer-events-none">
-                Concepto 2
-                <span class="material-symbols-outlined text-right">arrow_forward</span>
-            </a>
+        <div class="mb-14 sm:flex sm:flex-row sm:gap-8 sm:items-center">
+            <div class="order-1 relative w-full sm:w-1/2">
+                <h3
+                    class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:leading-tight"
+                >
+                    Beneficios de la quiropráctica.
+                </h3>
+
+                <ul class="mt-6 space-y-3 text-sm">
+                    {
+                        benefits.map((benfefit) => (
+                            <li class="flex space-x-3">
+                                <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                                    <svg
+                                        class="flex-shrink-0 size-3.5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 sm:text-lg">
+                                    {benfefit}
+                                </span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="order-2 hidden w-1/2 sm:block">
+                <img
+                    class="w-full h-full rounded-md"
+                    src="../musa-lp/images/benefit.jpg"
+                    alt="quiropráctica haciendo un ajuste"
+                />
+            </div>
         </div>
 
-        <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
-            <a href="#"
-               class="hs-accordion-toggle text-lime-600 hs-accordion-active:text-lime-600 flex items-center justify-between w-full font-semibold text-start text-lime-600 py-4 px-5 hover:text-lime-600 disabled:opacity-50 disabled:pointer-events-none">
-                Concepto 3
-                <span class="material-symbols-outlined text-right">arrow_forward</span>
-            </a>
+        <div class="mb-14 sm:flex sm:flex-row sm:gap-8 sm:items-center">
+            <div class="order-2 relative w-full sm:w-1/2">
+                <h3
+                    class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:leading-tight"
+                >
+                    ¿Si no me duele nada puedo ir al Quiropráctico?
+                </h3>
+                <p class="my-3 text-gray-600 sm:text-lg">
+                    La respuesta es sí, debido a que la columna pierde su
+                    posición adecuada por:
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                    {
+                        causes.map((cause) => (
+                            <li class="flex space-x-3">
+                                <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                                    <svg
+                                        class="flex-shrink-0 size-3.5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 sm:text-lg">
+                                    {cause}
+                                </span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="order-1 hidden w-1/2 sm:block">
+                <img
+                    class="w-full h-full rounded-md"
+                    src="../musa-lp/images/accident.jpg"
+                    alt="quiropráctica haciendo un ajuste"
+                />
+            </div>
         </div>
 
-        <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
-            <a href="#"
-               class="hs-accordion-toggle text-lime-600 hs-accordion-active:text-lime-600 flex items-center justify-between w-full font-semibold text-start text-lime-600 py-4 px-5 hover:text-lime-600 disabled:opacity-50 disabled:pointer-events-none">
-                Concepto 4
-                <span class="material-symbols-outlined text-right">arrow_forward</span>
-            </a>
+        <div class="mb-14 sm:flex sm:flex-row sm:gap-8 sm:items-center">
+            <div class="order-1 relative w-full sm:w-1/2">
+                <h3
+                    class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:leading-tight"
+                >
+                    Necesito un Quiropráctico si presento
+                </h3>
+                <ul class="mt-6 space-y-3 text-sm">
+                    {
+                        symptoms.map((syntom) => (
+                            <li class="flex space-x-3">
+                                <span class="size-5 flex justify-center items-center rounded-full bg-musa-blue-200 text-musa-blue-600 dark:bg-musa-blue-800/30 dark:text-musa-blue-500">
+                                    <svg
+                                        class="flex-shrink-0 size-3.5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 sm:text-lg">
+                                    {syntom}
+                                </span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="order-2 hidden w-1/2 sm:block">
+                <img
+                    class="w-full h-full rounded-md"
+                    src="../musa-lp/images/pain.jpg"
+                    alt="quiropráctica haciendo un ajuste"
+                />
+            </div>
+        </div>
+
+        <div>
+            <h3
+                class="mt-6 block text-3xl font-bold text-musa-green-600 sm:text-4xl lg:leading-tight"
+            >
+                ¿Quién se puede ajustar?
+            </h3>
+
+            <p class="my-3 text-gray-600 sm:text-lg sm:text-justify">
+                Todas la personas desde bebés hasta adultos mayores, ya que
+                existen diferentes técnicas, desde muy suaves de mínimo contacto
+                a técnicas con ayuda de instrumentación, las cuales serán
+                utilizadas de acuerdo a la edad y estado físico del paciente.
+            </p>
         </div>
     </div>
 </div>
