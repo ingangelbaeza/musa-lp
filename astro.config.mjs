@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
     integrations: [tailwind()],
-    site: "https://ingangelbaeza.github.io",
-    base: "/musa-lp",
+    site: "https://musaquiropractico.com",
+    base: "/",
 });
